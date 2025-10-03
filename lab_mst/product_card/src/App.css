@@ -1,0 +1,101 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.app__intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app__headline {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.app__subtext {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: #708993;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.product-card__price {
+  margin: 0;
+  font-weight: 500;
+  color: #111206;
+}
+
+.product-card__description {
+  margin: 0;
+  color: #FAF8F1;
+  font-size: 0.95rem;
+}
+
+.product-card__cta {
+  margin-top: auto;
+  align-self: flex-start;
+  border: 1px solid #FAEAB1;
+  border-radius: 8px;
+  padding: 8px 18px;
+  background: #FAEAB1;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.product-card__cta:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.product-card__badge {
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 600;
+  color: #ff0000;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 32px 16px 48px;
+  }
+
+  .product-card {
+    padding: 18px;
+  }
+}
