@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+  <header>
+    <h1>Owner Dashboard</h1>
+    <nav>
+      <a href="#" class="active">My Properties</a>
+      <a href="#">Billing</a>
+      <a href="#">Enquiries</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="property-list">
+      <h2>Your Properties</h2>
+      <div class="add-property">
+        <input type="text" id="new-property" placeholder="Enter property address">
+        <button onclick="addProperty()">Add Property</button>
+      </div>
+      <div id="properties-container">
+        <!-- Properties will load here via JS -->
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="owner.js"></script>
+</body>
+</html>

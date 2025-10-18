@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1 id="welcome-message">Welcome</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+
+        <main>
+            <!-- Owner Content -->
+            <div id="owner-view" class="role-view">
+                <h2>Owner Dashboard</h2>
+                <div class="property-list" id="owner-properties"></div>
+            </div>
+
+            <!-- Tenant Content -->
+            <div id="tenant-view" class="role-view">
+                <h2>Tenant Dashboard</h2>
+                <div id="tenant-info"></div>
+            </div>
+
+            <!-- Manager Content -->
+            <div id="manager-view" class="role-view">
+                <h2>Manager Dashboard</h2>
+                <div id="manager-tasks"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

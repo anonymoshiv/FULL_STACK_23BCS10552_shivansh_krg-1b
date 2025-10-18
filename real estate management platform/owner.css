@@ -1,0 +1,50 @@
+/* Owner Dashboard Specific Styles */
+.property-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .add-property {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-property input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-property button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Status Badges */
+  .status-occupied {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .status-vacant {
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  /* Property Card Buttons */
+  .property-card button {
+    padding: 5px 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
