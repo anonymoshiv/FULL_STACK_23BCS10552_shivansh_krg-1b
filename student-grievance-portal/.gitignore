@@ -1,0 +1,22 @@
+# Java
+/target
+/*.iml
+/.idea
+/.classpath
+/.project
+/.settings
+
+# Maven
+/settings.xml
+
+# Node
+/node_modules
+/dist
+/.vite
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode
